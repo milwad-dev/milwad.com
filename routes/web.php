@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Admin routes
-Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function ($router) {
+Route::group(['prefix' => 'admin'], function ($router) {
     $router->get('panel', PanelController::class);
 });
