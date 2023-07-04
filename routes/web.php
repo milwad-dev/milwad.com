@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DocsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PanelController;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,4 @@ Route::group(['prefix' => 'admin'], function ($router) {
 
 // Home routes
 Route::get('/', HomeController::class)->name('home.index');
+Route::get('{repo}/docs/{version}/{page}', DocsController::class)->name('docs');
