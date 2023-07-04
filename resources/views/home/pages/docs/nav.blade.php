@@ -6,10 +6,10 @@
     <div class="scroll">
         <ul class="list-unstyled nav-sidebar">
             @foreach($navbarItems as $title)
-                <li class="nav-item">
+                <li class="nav-item {{ $title === $page ? 'active' : null }}">
                     <a href="{{ route('docs.details', ['repo' => $repo, 'version' => $version, 'page' => $title]) }}"
                        class="nav-link">
-                        <img src="{{ asset('assets/img/side-nav/home.png') }}" alt="">{{ page_to_title($title, true) }}
+                        <i class="arrow_right mr-2"></i>{{ page_to_title($title, true) }}
                     </a>
                 </li>
             @endforeach

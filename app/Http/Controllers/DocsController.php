@@ -21,6 +21,7 @@ class DocsController extends Controller
         return view('home.pages.docs.docs', compact([
             'repo',
             'version',
+            'page',
             'content',
             'navbarItems',
         ]));
