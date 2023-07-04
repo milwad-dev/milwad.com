@@ -19,3 +19,18 @@ if (!function_exists('page_to_title')) {
         return ucwords($title);
     }
 }
+
+if (!function_exists('title_to_page')) {
+    /**
+     * Covert title to correct page title.
+     *
+     * @param  string $title
+     * @return string
+     */
+    function title_to_page(string $title)
+    {
+        $title = str_replace(' ', '-', $title);
+
+        return strtolower($title);
+    }
+}

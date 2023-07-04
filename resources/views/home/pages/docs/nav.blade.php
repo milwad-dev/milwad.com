@@ -7,7 +7,7 @@
         <ul class="list-unstyled nav-sidebar">
             @foreach($navbarItems as $title)
                 <li class="nav-item {{ $title === $page ? 'active' : null }}">
-                    <a href="{{ route('docs.details', ['repo' => $repo, 'version' => $version, 'page' => $title]) }}"
+                    <a href="{{ route('docs.details', ['repo' => title_to_page($repo), 'version' => $version, 'page' => $title]) }}"
                        class="nav-link">
                         <i class="arrow_right mr-2"></i>{{ page_to_title($title, true) }}
                     </a>
