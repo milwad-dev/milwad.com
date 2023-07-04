@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PanelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Admin routes
+Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function ($router) {
+    $router->get('panel', PanelController::class);
 });
