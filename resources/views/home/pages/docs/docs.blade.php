@@ -1,7 +1,9 @@
 @extends('home.layout.master')
 
+@section('title', $repo)
+
 @section('content')
-    <section class="doc_documentation_area" id="sticky_doc">
+    <section class="doc_documentation_area mt-5" id="sticky_doc">
         <div class="overlay_bg"></div>
         <div class="container custom_container">
             <div class="row">

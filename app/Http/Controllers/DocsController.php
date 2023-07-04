@@ -13,7 +13,8 @@ class DocsController extends Controller
         abort_if(!file_exists($path), 404);
 
         $content = Markdown::convertToHtml(file_get_contents($path));
+        $repo = ucwords(str_replace('-', ' ', $repo));
 
-        return view('home.pages.docs.docs', compact('content'));
+        return view('home.pages.docs.docs', compact('content', 'repo'));
     }
 }
