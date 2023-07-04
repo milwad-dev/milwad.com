@@ -13,32 +13,8 @@
             <div class="top-menu">
                 <div class="strikingDash-top-menu position-relative">
                     <ul>
-                        <li class="has-subMenu">
-                            <a href="#" class="active">Dashboard</a>
-                            <ul class="subMenu">
-                                <li>
-                                    <a class="active" href="index.html">Social Media</a>
-                                </li>
-                                <li>
-                                    <a class="" href="business.html">FineTech /
-                                        Business</a>
-                                </li>
-                                <li>
-                                    <a class="" href="performance.html">Site
-                                        Performance</a>
-                                </li>
-                                <li>
-                                    <a class="" href="ecommerce.html">Ecommerce</a>
-                                </li>
-                                <li>
-                                    <a class="" href="crm.html">
-                                        CRM</a>
-                                </li>
-                                <li>
-                                    <a class="" href="sales.html">
-                                        Sales Performance</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="{{ route('admin.panel') }}" class="active">Dashboard</a>
                         </li>
                         <li class="has-subMenu">
                             <a href="#" class="">Layouts</a>

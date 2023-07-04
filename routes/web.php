@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 // Admin routes
 Route::group(['prefix' => 'admin'], function ($router) {
-    $router->get('panel', PanelController::class);
+    $router->get('panel', PanelController::class)->name('admin.panel');
 });

@@ -14,7 +14,10 @@
     </head>
     <body class="layout-light side-menu overlayScroll">
         @include('admin.section.header')
-        @yield('content')
+        <main class="main-content">
+            @include('admin.section.sidebar')
+            @yield('content')
+        </main>
 
         <div id="overlayer">
                 <span class="loader-overlay">
