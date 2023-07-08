@@ -52,6 +52,8 @@ return [
         'laravel-crod' => [
             'introduction',
             'installation',
+
+            'configuration',
         ],
     ]
 ];
