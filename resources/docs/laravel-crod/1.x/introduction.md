@@ -9,7 +9,9 @@
 [![PHP Version Require](http://poser.pugx.org/milwad/laravel-crod/require/php)](https://packagist.org/packages/milwad/laravel-crod)
 
 ***
+
 Laravel Crod is a package for implementing CRUD faster and easier. <br>
 You can create controllers, models, migrations, services, repositories, views, and requests quickly. <br>
-You can make it automatically fillable for models, query for repositories and services, make resource functions for
-controllers, and have a lot of options.
+You can make automatically fillable for models, query for repositories and services, make resource functions for controllers, and a lot of options.
+
+Laravel-crod is a simple yet powerful package that can help you create CRUD operations for your Laravel models in just a few lines of code. By following this documentation, you should now have a better understanding of how to use the package in your Laravel project. If you have any issues or questions, please feel free to open an issue on the package's GitHub repository.
