@@ -57,6 +57,9 @@ return [
 
             'make-crud-files',
             'crud-query',
+
+            'make-crud-module',
+            'crud-query-module',
         ],
     ]
 ];
