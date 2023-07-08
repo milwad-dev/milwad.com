@@ -4,7 +4,6 @@ return [
     'packages' => [
         'laravel-validate' => [
             'introduction',
-            'installation',
 
             'available-Rules',
 
@@ -49,6 +48,10 @@ return [
             'support-languages',
             'contributing',
             'video-tutorial',
-        ]
+        ],
+        'laravel-crod' => [
+            'introduction',
+            'installation',
+        ],
     ]
 ];
