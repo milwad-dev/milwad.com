@@ -60,6 +60,8 @@ return [
 
             'make-crud-module',
             'crud-query-module',
+
+            'testing',
         ],
     ]
 ];
