@@ -6,6 +6,8 @@ return [
             'introduction',
             'installation',
 
+            'available-Rules',
+
             'valid-bitcoin-address-rule',
             'valid-capital-char-with-number-rule',
             'valid-discord-username-rule',
