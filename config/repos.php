@@ -62,6 +62,7 @@ return [
             'crud-query-module',
 
             'testing',
+            'contributing',
         ],
     ]
 ];
