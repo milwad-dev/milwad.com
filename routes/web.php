@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DocsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PanelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Admin routes
+Route::group(['prefix' => 'admin'], function ($router) {
+    $router->get('panel', PanelController::class)->name('admin.panel');
 });
+
+// Home routes
+Route::get('/', HomeController::class)->name('home.index');
+Route::get('blog', HomeController::class)->name('blog.index');
+Route::get('docs', DocsController::class)->name('docs.index');
+Route::get('{repo}/docs/{version}/{page}', DocsController::class)->name('docs.details');
