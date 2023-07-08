@@ -54,6 +54,9 @@ return [
             'installation',
 
             'configuration',
+
+            'make-crud-files',
+            'crud-query',
         ],
     ]
 ];
